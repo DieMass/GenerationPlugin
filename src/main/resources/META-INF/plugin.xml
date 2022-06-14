@@ -1,0 +1,25 @@
+<idea-plugin>
+    <id>ru.itis.GeneratorPlugin</id>
+    <name>Plugin display name here</name>
+    <vendor email="support@yourcompany.com" url="http://www.yourcompany.com">YourCompany</vendor>
+
+    <description><![CDATA[
+    Enter short description for your plugin here.<br>
+    <em>most HTML tags may be used</em>
+    ]]></description>
+
+    <!-- please see https://plugins.jetbrains.com/docs/intellij/plugin-compatibility.html
+         on how to target different products -->
+    <depends>com.intellij.modules.platform</depends>
+
+    <extensions defaultExtensionNs="com.intellij">
+        <!-- Add your extensions here -->
+    </extensions>
+
+    <actions>
+        <!-- Add your actions here -->
+        <action id="ru.itis.CreateFileAction" class="ru.itis.CreateFileAction" text="Create file">
+            <keyboard-shortcut keymap="$default" first-keystroke="ctrl SEMICOLON" second-keystroke="ctrl QUOTE"/>
+        </action>
+    </actions>
+</idea-plugin>
